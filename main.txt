@@ -1,0 +1,33 @@
+$ cd veggie-favorites
+$ git add .
+$ git commit -m "changes"
+[master 47e7845] changes
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+$ cd ../veggie-clone
+$ git fetch
+remote: Counting objects: 13, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 13 (delta 7), reused 0 (delta 0)
+Unpacking objects: 100% (13/13), done.
+From /home/ccuser/workspace/recipe-book-a/veggie-favorites
+ * [new branch]      master     -> origin/master
+$ git merge origin/master
+Updating 4681ee4..47e7845
+Fast-forward
+ chili.txt          | 14 +++++++-------
+ margherita.txt     | 11 +++++++----
+ squash-lasagna.txt |  5 +++--
+ 3 files changed, 17 insertions(+), 13 deletions(-)
+$ git branch veggie-sami
+$ git checkout veggie-sami
+Switched to branch 'veggie-sami'
+$ git add .
+$ git commit -m "sami commit"
+On branch veggie-sami
+nothing to commit, working directory clean
+$ git fetch
+$ git push origin veggie-sami
+Total 0 (delta 0), reused 0 (delta 0)
+To /home/ccuser/workspace/recipe-book-a/veggie-favorites
+ * [new branch]      veggie-sami -> veggie-sami
+$ cd ../veggie-favorites
